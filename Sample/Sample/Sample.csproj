@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <title>XTemplates.MVVM</title>
+    <PackageId>Sample</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Version>1.0.0</Version>
+    <Authors>Mohamed Ali NOUIRA</Authors>
+    <Owners>Mohamed Ali NOUIRA</Owners>
+    <Summary>MVVM template for Xamarin.Forms projects.</Summary>
+    <EnableDefaultCompileItems>False</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>False</EnableDefaultEmbeddedResourceItems>
+    <Company>Mohamed Ali NOUIRA</Company>
+    <Copyright></Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Description></Description>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageTags></PackageTags>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+    <EmbeddedResource Include="Views\HomeView.xaml" />
+    <EmbeddedResource Include="AppResources\Assets\ic_xfp.png" />
+    <EmbeddedResource Include="AppResources\Localization\Resources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+    <PackageReference Include="Xamarin.Forms.ToolKit.Extensions" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    
+    <Compile Include="IViewModels\IHomeViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelLocator.cs" />    
+    <Compile Include="ViewModels\HomeViewModel.cs" />   
+    
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>    
+    
+    <Compile Include="Views\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>    
+    
+    <ProjectReference Include="..\..\Xamarin.Forms.Popups\Xamarin.Forms.Popups.csproj" />
+
+    <Compile Update="AppResources\Localization\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AppResources\Localization\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+</Project>

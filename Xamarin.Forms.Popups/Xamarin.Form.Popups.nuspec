@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/medalinouira/Xamarin.Forms.Popups</licenseUrl>
+    <projectUrl>https://github.com/medalinouira/Xamarin.Forms.Popups</projectUrl>
+    <iconUrl>https://github.com/medalinouira/Xamarin.Forms.Popups/blob/master/Xamarin.Forms.Popups/ic_xfp.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>DisplayActionSheet, DisplayAlerts</releaseNotes>
+    <copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</copyright>
+    <tags>Popups Xamarin Xamarin.Forms MVVM Sweet-MIT</tags>
+  </metadata>
+</package>

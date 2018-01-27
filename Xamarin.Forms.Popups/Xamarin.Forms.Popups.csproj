@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Mohamed Ali NOUIRA</Authors>
+    <Company>Mohamed Ali NOUIRA</Company>
+    <Product>Xamarin.Forms.Popups</Product>
+    <Description>Popups for Xamarin.Forms.</Description>
+    <Copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</Copyright>
+    <PackageLicenseUrl>https://www.github.com/medalinouira/Xamarin.Forms.Popups</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.github.com/medalinouira/Xamarin.Forms.Popups</PackageProjectUrl>
+    <RepositoryUrl>https://www.github.com/medalinouira/Xamarin.Forms.Popups</RepositoryUrl>
+    <PackageTags>Popups Xamarin.Forms Xamarin MVVM Sweet-MIT</PackageTags>
+    <PackageIconUrl>https://github.com/medalinouira/Xamarin.Forms.Popups/blob/master/Xamarin.Forms.Popups/ic_xfp.png?raw=true</PackageIconUrl>
+    <PackageReleaseNotes>DisplayActionSheet, DisplayAlerts</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ic_xfp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ic_xfp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+  </ItemGroup>
+
+</Project>

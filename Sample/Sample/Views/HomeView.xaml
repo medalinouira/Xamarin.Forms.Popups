@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.HomeView"
+             Title="{ex:Translate Key=HOME_TITLE}" 
+             ControlTemplate="{StaticResource MyTemplate}"             
+             BackgroundColor="White"
+             xmlns:ex="clr-namespace:Xamarin.Forms.ToolKit.Extensions;assembly=Xamarin.Forms.ToolKit.Extensions"
+             BindingContext="{Binding Home, Source={StaticResource Locator}}">
+
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <Button Text="DisplayAlert"
+                        Style="{StaticResource BtnPink}"
+                        Command="{Binding Path=BtnTappedCommand}"
+                        CommandParameter="DisplayAlert"/>
+
+                <Button Text="DisplayActionSheet"
+                        Style="{StaticResource BtnGray}"
+                        Command="{Binding Path=BtnTappedCommand}"
+                        CommandParameter="DisplayActionSheet"/>
+
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>
